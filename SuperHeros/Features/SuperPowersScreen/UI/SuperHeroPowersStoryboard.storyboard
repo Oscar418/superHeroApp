@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nNd-pj-edh">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="WFutura-SemiBold.otf">
+            <string>WFutura-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Super Hero Powers View Controller-->
+        <scene sceneID="gUX-Kk-1Cg">
+            <objects>
+                <viewController storyboardIdentifier="superHeroPowersViewController" id="nNd-pj-edh" customClass="SuperHeroPowersViewController" customModule="SuperHeros" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gUU-rS-EnG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ilf-v6-dfn">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4C8-Sc-5gB">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Superpowers:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nW6-mQ-1Gy">
+                                                <rect key="frame" x="95" y="16" width="224" height="34"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="34" id="1pR-n1-JAo"/>
+                                                    <constraint firstAttribute="width" constant="224" id="6gM-cG-3c0"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="26"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="anH-ad-Mog" customClass="progressBar" customModule="SuperHeros" customModuleProvider="target">
+                                                <rect key="frame" x="16" y="66" width="140" height="140"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="140" id="bZ9-ik-kDp"/>
+                                                    <constraint firstAttribute="width" constant="140" id="ofr-67-QaF"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W6v-nH-nZ9" customClass="progressBar" customModule="SuperHeros" customModuleProvider="target">
+                                                <rect key="frame" x="258" y="66" width="140" height="140"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="140" id="H0S-SZ-Cfd"/>
+                                                    <constraint firstAttribute="width" constant="140" id="lZN-cE-616"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gEH-1x-sdh" customClass="progressBar" customModule="SuperHeros" customModuleProvider="target">
+                                                <rect key="frame" x="16" y="258" width="140" height="140"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="140" id="0z8-T9-avr"/>
+                                                    <constraint firstAttribute="width" constant="140" id="clO-ES-9YE"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bAm-Ns-n1K" customClass="progressBar" customModule="SuperHeros" customModuleProvider="target">
+                                                <rect key="frame" x="258" y="258" width="140" height="140"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="140" id="MDI-Nm-fyA"/>
+                                                    <constraint firstAttribute="width" constant="140" id="uZU-iy-Thm"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TIa-Uo-B2N" customClass="progressBar" customModule="SuperHeros" customModuleProvider="target">
+                                                <rect key="frame" x="16" y="450" width="140" height="140"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="140" id="1WN-Em-WgL"/>
+                                                    <constraint firstAttribute="height" constant="140" id="Did-jh-ZpR"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZXi-pd-uAs" customClass="progressBar" customModule="SuperHeros" customModuleProvider="target">
+                                                <rect key="frame" x="258" y="450" width="140" height="140"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="140" id="okI-ko-L8h"/>
+                                                    <constraint firstAttribute="width" constant="140" id="yBF-Gu-jao"/>
+                                                </constraints>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Strength" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U24-lj-Qna">
+                                                <rect key="frame" x="293.66666666666669" y="218" width="69" height="24"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="24" id="6sP-Nd-3lW"/>
+                                                    <constraint firstAttribute="width" constant="69" id="LOj-rk-Tn7"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="WFutura-SemiBold" family="WFutura" pointSize="16"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Intelligence" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qLO-S9-oVk">
+                                                <rect key="frame" x="39.666666666666657" y="218" width="93" height="24"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="24" id="crG-wX-3bJ"/>
+                                                    <constraint firstAttribute="width" constant="93" id="ib2-uB-cJ2"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="WFutura-SemiBold" family="WFutura" pointSize="16"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Speed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Erb-PU-1VH">
+                                                <rect key="frame" x="60" y="410" width="52" height="24"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="52" id="E56-iS-j7M"/>
+                                                    <constraint firstAttribute="height" constant="24" id="gE7-Fa-TVH"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="WFutura-SemiBold" family="WFutura" pointSize="16"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Durability" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hQC-LX-du2">
+                                                <rect key="frame" x="288" y="410" width="80" height="24"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="24" id="NeR-fi-fT6"/>
+                                                    <constraint firstAttribute="width" constant="80" id="ZIo-ca-vH5"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="WFutura-SemiBold" family="WFutura" pointSize="16"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Power" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uzc-fE-aKe">
+                                                <rect key="frame" x="60.666666666666657" y="602" width="51" height="24"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="24" id="Yee-hX-Mfe"/>
+                                                    <constraint firstAttribute="width" constant="51" id="hXf-vz-GSa"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="WFutura-SemiBold" family="WFutura" pointSize="16"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Combat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="beF-RJ-EqM">
+                                                <rect key="frame" x="295.66666666666669" y="602" width="65" height="24"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="65" id="OS3-j6-Jqk"/>
+                                                    <constraint firstAttribute="height" constant="24" id="egE-Mc-0EW"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="WFutura-SemiBold" family="WFutura" pointSize="16"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="nW6-mQ-1Gy" firstAttribute="centerX" secondItem="4C8-Sc-5gB" secondAttribute="centerX" id="65R-3p-6rV"/>
+                                            <constraint firstAttribute="trailing" secondItem="bAm-Ns-n1K" secondAttribute="trailing" constant="16" id="6T5-oN-hQW"/>
+                                            <constraint firstItem="Erb-PU-1VH" firstAttribute="centerX" secondItem="gEH-1x-sdh" secondAttribute="centerX" id="AlS-q6-7A8"/>
+                                            <constraint firstItem="Uzc-fE-aKe" firstAttribute="top" secondItem="TIa-Uo-B2N" secondAttribute="bottom" constant="12" id="COc-xo-dlm"/>
+                                            <constraint firstItem="qLO-S9-oVk" firstAttribute="centerX" secondItem="anH-ad-Mog" secondAttribute="centerX" id="Dtq-M3-RBA"/>
+                                            <constraint firstItem="hQC-LX-du2" firstAttribute="top" secondItem="bAm-Ns-n1K" secondAttribute="bottom" constant="12" id="EyI-Wx-aXO"/>
+                                            <constraint firstItem="qLO-S9-oVk" firstAttribute="top" secondItem="anH-ad-Mog" secondAttribute="bottom" constant="12" id="HES-v5-I5a"/>
+                                            <constraint firstItem="anH-ad-Mog" firstAttribute="leading" secondItem="4C8-Sc-5gB" secondAttribute="leading" constant="16" id="HYj-Gt-Off"/>
+                                            <constraint firstItem="U24-lj-Qna" firstAttribute="top" secondItem="W6v-nH-nZ9" secondAttribute="bottom" constant="12" id="Hd1-Ub-orh"/>
+                                            <constraint firstItem="gEH-1x-sdh" firstAttribute="leading" secondItem="4C8-Sc-5gB" secondAttribute="leading" constant="16" id="IiO-3i-hjU"/>
+                                            <constraint firstItem="beF-RJ-EqM" firstAttribute="top" secondItem="ZXi-pd-uAs" secondAttribute="bottom" constant="12" id="JPv-EY-iBF"/>
+                                            <constraint firstItem="Erb-PU-1VH" firstAttribute="top" secondItem="gEH-1x-sdh" secondAttribute="bottom" constant="12" id="MaA-Dd-faB"/>
+                                            <constraint firstItem="hQC-LX-du2" firstAttribute="centerX" secondItem="bAm-Ns-n1K" secondAttribute="centerX" id="T7v-ba-U5L"/>
+                                            <constraint firstItem="beF-RJ-EqM" firstAttribute="centerX" secondItem="ZXi-pd-uAs" secondAttribute="centerX" id="UF0-1m-i8T"/>
+                                            <constraint firstItem="U24-lj-Qna" firstAttribute="centerX" secondItem="W6v-nH-nZ9" secondAttribute="centerX" id="V7h-gD-nuJ"/>
+                                            <constraint firstItem="bAm-Ns-n1K" firstAttribute="top" secondItem="U24-lj-Qna" secondAttribute="bottom" constant="16" id="ZUQ-R0-rRA"/>
+                                            <constraint firstItem="W6v-nH-nZ9" firstAttribute="top" secondItem="nW6-mQ-1Gy" secondAttribute="bottom" constant="16" id="ZaI-PO-kxG"/>
+                                            <constraint firstItem="gEH-1x-sdh" firstAttribute="top" secondItem="qLO-S9-oVk" secondAttribute="bottom" constant="16" id="Zcv-Y9-QPq"/>
+                                            <constraint firstItem="nW6-mQ-1Gy" firstAttribute="top" secondItem="4C8-Sc-5gB" secondAttribute="top" constant="16" id="aeE-wr-eVf"/>
+                                            <constraint firstAttribute="trailing" secondItem="ZXi-pd-uAs" secondAttribute="trailing" constant="16" id="amf-Pl-Gpa"/>
+                                            <constraint firstItem="TIa-Uo-B2N" firstAttribute="leading" secondItem="4C8-Sc-5gB" secondAttribute="leading" constant="16" id="b3S-4N-f7P"/>
+                                            <constraint firstItem="ZXi-pd-uAs" firstAttribute="top" secondItem="hQC-LX-du2" secondAttribute="bottom" constant="16" id="js9-u6-PT6"/>
+                                            <constraint firstAttribute="height" constant="736" id="lfW-Mr-6jP"/>
+                                            <constraint firstItem="TIa-Uo-B2N" firstAttribute="top" secondItem="Erb-PU-1VH" secondAttribute="bottom" constant="16" id="phx-qo-HRb"/>
+                                            <constraint firstItem="anH-ad-Mog" firstAttribute="top" secondItem="nW6-mQ-1Gy" secondAttribute="bottom" constant="16" id="s6J-vT-wiJ"/>
+                                            <constraint firstAttribute="trailing" secondItem="W6v-nH-nZ9" secondAttribute="trailing" constant="16" id="wVu-GH-rAO"/>
+                                            <constraint firstItem="Uzc-fE-aKe" firstAttribute="centerX" secondItem="TIa-Uo-B2N" secondAttribute="centerX" id="x91-Rs-gdV"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="4C8-Sc-5gB" firstAttribute="leading" secondItem="Ilf-v6-dfn" secondAttribute="leading" id="IDZ-FR-ncW"/>
+                                    <constraint firstAttribute="bottom" secondItem="4C8-Sc-5gB" secondAttribute="bottom" id="l7h-In-Sza"/>
+                                    <constraint firstAttribute="trailing" secondItem="4C8-Sc-5gB" secondAttribute="trailing" id="nlw-hT-CBb"/>
+                                    <constraint firstItem="4C8-Sc-5gB" firstAttribute="top" secondItem="Ilf-v6-dfn" secondAttribute="top" id="xr5-IF-hzK"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="GIO-vk-f7j"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Ilf-v6-dfn" firstAttribute="trailing" secondItem="GIO-vk-f7j" secondAttribute="trailing" id="FCU-2D-w0u"/>
+                            <constraint firstItem="Ilf-v6-dfn" firstAttribute="top" secondItem="GIO-vk-f7j" secondAttribute="top" id="XKh-7t-Top"/>
+                            <constraint firstItem="Ilf-v6-dfn" firstAttribute="bottom" secondItem="GIO-vk-f7j" secondAttribute="bottom" id="YBq-ly-0dV"/>
+                            <constraint firstItem="4C8-Sc-5gB" firstAttribute="width" secondItem="gUU-rS-EnG" secondAttribute="width" id="hJ3-se-ENq"/>
+                            <constraint firstItem="Ilf-v6-dfn" firstAttribute="leading" secondItem="GIO-vk-f7j" secondAttribute="leading" id="wMJ-sb-qb6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="combatProgressBar" destination="ZXi-pd-uAs" id="gSn-xI-icf"/>
+                        <outlet property="durabilityProgressBar" destination="bAm-Ns-n1K" id="ech-dh-ghg"/>
+                        <outlet property="powerProgressBar" destination="TIa-Uo-B2N" id="r6n-eW-AsO"/>
+                        <outlet property="progressBarView" destination="anH-ad-Mog" id="vqM-ce-Nqk"/>
+                        <outlet property="speedProgressBar" destination="gEH-1x-sdh" id="8BT-jf-w7s"/>
+                        <outlet property="strengthProgressBar" destination="W6v-nH-nZ9" id="mEp-ZE-gFJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XFR-AJ-wel" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="234.78260869565219" y="101.90217391304348"/>
+        </scene>
+    </scenes>
+</document>

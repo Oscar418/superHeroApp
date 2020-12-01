@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="thm-3X-yg3">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="WFutura-SemiBold.otf">
+            <string>WFutura-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SuperHeros" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avengers" translatesAutoresizingMaskIntoConstraints="NO" id="hjU-K8-NL6">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EPG-pd-MSx">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="48n-Bd-dMZ">
+                                        <rect key="frame" x="16" y="656" width="382" height="48"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="ZPl-7O-1X3"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="WFutura-SemiBold" family="WFutura" pointSize="16"/>
+                                        <state key="normal" title="Find out">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="Cp0-zO-g31" kind="show" id="GK1-43-wrm"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Which Superhero am I?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ndj-UA-aP4">
+                                        <rect key="frame" x="67" y="351" width="280" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="280" id="nrE-yd-9AG"/>
+                                            <constraint firstAttribute="height" constant="34" id="y1R-ZU-9Sz"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="WFutura-SemiBold" family="WFutura" pointSize="24"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="48n-Bd-dMZ" firstAttribute="leading" secondItem="EPG-pd-MSx" secondAttribute="leading" constant="16" id="AJK-Cy-vit"/>
+                                    <constraint firstAttribute="trailing" secondItem="48n-Bd-dMZ" secondAttribute="trailing" constant="16" id="KyC-HI-8FD"/>
+                                    <constraint firstItem="ndj-UA-aP4" firstAttribute="centerY" secondItem="EPG-pd-MSx" secondAttribute="centerY" id="nNs-QE-XKJ"/>
+                                    <constraint firstItem="ndj-UA-aP4" firstAttribute="centerX" secondItem="EPG-pd-MSx" secondAttribute="centerX" id="pLM-X7-qV5"/>
+                                    <constraint firstAttribute="bottom" secondItem="48n-Bd-dMZ" secondAttribute="bottom" constant="32" id="qDl-6r-0Y4"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="EPG-pd-MSx" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="1I8-3h-itp"/>
+                            <constraint firstItem="EPG-pd-MSx" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="EoT-ck-aes"/>
+                            <constraint firstItem="hjU-K8-NL6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="IpG-Is-UbA"/>
+                            <constraint firstItem="hjU-K8-NL6" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Js2-yC-EhP"/>
+                            <constraint firstItem="hjU-K8-NL6" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="S18-7l-5AY"/>
+                            <constraint firstItem="EPG-pd-MSx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="S69-R6-iVT"/>
+                            <constraint firstItem="hjU-K8-NL6" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="kjR-34-vTM"/>
+                            <constraint firstItem="EPG-pd-MSx" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="pxh-A7-PSV"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="oD8-WI-iGX"/>
+                    <connections>
+                        <outlet property="heroQuestionLabel" destination="ndj-UA-aP4" id="0mg-Ay-jYf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1020.2898550724639" y="88.858695652173921"/>
+        </scene>
+        <!--SuperHeroStoryboard-->
+        <scene sceneID="EbL-7H-LwD">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SuperHeroStoryboard" id="Cp0-zO-g31" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="hPm-gl-hHQ"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vcj-Q8-aKo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1665.217391304348" y="88.858695652173921"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="mwe-Ty-Sh7">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="thm-3X-yg3" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="wQx-ff-Uxj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="G4E-QO-ZGf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Gm-52-fGq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="113.04347826086958" y="88.858695652173921"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="avengers" width="1080" height="1920"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
